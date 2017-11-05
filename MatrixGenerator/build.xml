@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Project1" default="default" basedir=".">
+
+    <taskdef name="bundleapp"
+             classname="com.oracle.appbundler.AppBundlerTask"   
+             classpath="lib/appbundler-1.0.jar" />
+
+    <target name="bundle-buttonDemo">
+        <bundleapp outputdirectory="dist"
+            name="MainClass"
+            displayname="Button Demo"
+            identifier="package1.MainClass"
+            mainclassname="MainClass">
+            <classpath file="dist/Problem1.jar" />
+        </bundleapp>
+    </target>
+
+</project>
